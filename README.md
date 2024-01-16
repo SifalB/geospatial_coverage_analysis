@@ -72,4 +72,6 @@ The script assumes that the shapefiles have been extracted using the Extract_ZIP
 The script handles invalid geometries by attempting to fix them using the buffer(0) method. If the fix fails, the script will still count the points within the shapefile's coverage area, but the results may not be accurate for that particular shapefile.
 The script assumes that the CSV file has a header row. If your file does not have a header, remove the line next(reader)
 
+Also be aware the time and space complexity for this script are high and requires optimisation to be able to run huge amount of data.
+
 
